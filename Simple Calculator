@@ -1,0 +1,25 @@
+import   java.util.Scanner;
+public class Main
+{
+public static void main(String args[])
+{
+    int a, b, ch;
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter First Number: ");
+    a = sc.nextInt();
+    System.out.println("Enter Second Number: ");
+    b = sc.nextInt();
+    System.out.println("1 -> Add, 2-> Subtract, 3-> Multiply, 4-> Divide \nEnter Your Choice: ");
+    ch = sc.nextInt();
+    if (ch == 1)
+    System.out.print("Addition: " + (a+b));
+    else if (ch == 2)
+    System.out.print("Subtraction: " + (a-b));
+    else if (ch == 3)
+    System.out.print("Addition: " + (a*b));
+    else if (ch == 4)
+    System.out.println("Division: " + (a/b));
+    else
+    System.out.println("Invalid Choice.");
+}
+}
