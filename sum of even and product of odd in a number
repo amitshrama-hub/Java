@@ -1,0 +1,22 @@
+public class Main
+{
+public static void main(String args[])
+{
+    int num, a = 0, x = 0, sum = 0, prod = 1;
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the number: ");
+    num = sc.nextInt();
+    while (num > 0)
+    {
+        a = num%10;
+        if (a%2 == 0)
+            sum += a;
+        else
+            prod *= a;
+        num = num/10;
+     
+    }
+    System.out.println("Sum of even: " + sum);
+    System.out.println("Product of odd: " + prod);
+}
+}
