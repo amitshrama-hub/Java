@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Main
+{
+public static void main(String args[])
+{
+    int num, cpy, x = 0, sum = 0, prod = 1;
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the number: ");
+    num = sc.nextInt();
+    cpy = num;
+    while (num > 0)
+    {
+        x = (x * 10) + num%10;
+        num = num/10;
+    }
+    System.out.println(x);
+    if (x == cpy)
+    System.out.println("Number is Palindrome");
+    else
+    System.out.println("Number is not Palindrome");
+}
+}
