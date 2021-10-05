@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+class checkEmail
+{
+public static void main(String args[])
+{
+	Scanner sc = new Scanner(System.in);
+	String s = sc.nextLine();
+	if(s.lastIndexOf(".in") == s.length() - 3)
+		System.out.println("Indian");
+	else
+		System.out.println("Non - Indian");
+	if(s.lastIndexOf(".ac") == s.length() - 6)
+		System.out.println("Private Account");
+	else
+		System.out.println("Non Private Account");
+
+}}
