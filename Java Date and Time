@@ -1,0 +1,20 @@
+import java.time.LocalDate;
+import java.util.*;
+
+public class Solution {
+    public String day(int mm, int dd, int yy){
+        LocalDate dt = LocalDate.of(yy, mm, dd);
+        String ddd = String.valueOf(dt.getDayOfWeek());
+
+        return ddd;
+    }
+    
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int mm = sc.nextInt();
+        int dd = sc.nextInt();
+        int yy = sc.nextInt();
+        Solution da = new Solution();
+        System.out.println(da.day(mm, dd, yy));
+    }
+}
