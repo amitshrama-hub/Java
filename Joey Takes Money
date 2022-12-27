@@ -1,0 +1,22 @@
+import java.util.*;
+
+class Solution{
+    public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+		int times = sc.nextInt();
+		for(int x =0; x<times; x++){
+		    int len = sc.nextInt();
+		    int arr[] = new int[len];
+		    long product = 1 ;
+		    for(int num = 0; num < len; num++){
+		        arr[num] = sc.nextInt();
+		    }
+		    for(int i = 0; i<len; i++){
+		        product *= arr[i]; 
+                // System.out.println(product);
+		    }
+		    System.out.println((product + len-1) * 2022);
+        }   
+    
+    }
+}
