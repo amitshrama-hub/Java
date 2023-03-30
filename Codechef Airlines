@@ -13,10 +13,13 @@ class Codechef
 		    int x = sc.nextInt();
 		    int y = sc.nextInt();
 		    int z = sc.nextInt();
-		    if(x*10 >= y)
-		        System.out.println(y*z);
-		    else
-		        System.out.println(x*10*z);
+		    if(x*10 >= y){
+		    	System.out.println(y*z);
+		    }
+		    else{
+		    	System.out.println(x*10*z);
+		    }
+		        
 		}
 	}
 }
