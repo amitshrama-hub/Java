@@ -11,10 +11,12 @@ class Codechef
 		int times = sc.nextInt();
 		for(int iteration = 0; iteration < times; iteration++){
 		    int candies = sc.nextInt();
-		    if(candies%3 == 0)  
+		    if(candies%3 == 0){
 		        System.out.println("YES");
-		    else
+		    }
+		    else{
 		        System.out.println("NO");
+		    }
 		}
 		
 	}
