@@ -9,10 +9,10 @@ class Codechef
 	{
 		Scanner sc = new Scanner(System.in);
 		int times = sc.nextInt();
-	    for(int t = 0; t<times; t++){
-	        int battery = sc.nextInt();
-	        String ans = (battery >= 80 )? "YES":"NO";
-	        System.out.println(ans);
-	    }
+	    	for(int t = 0; t<times; t++){
+	        	int battery = sc.nextInt();
+	        	String ans = (battery >= 80 )? "YES":"NO";
+	         	System.out.println(ans);
+	    	}
 	}
 }
