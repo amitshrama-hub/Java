@@ -1,0 +1,30 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sc = new Scanner(System.in);
+		int teseCase = sc.nextInt();
+		for(int loop =0;loop<teseCase; loop++){
+		    int num = sc.nextInt();
+		    String str = num + "";
+		    if(str.charAt(0) == 0)
+		        System.out.println("loses");
+		        
+		    else{
+		         String reverse = "";
+		         for(int i = str.length()-1; i>=0; i--){
+		             reverse = reverse + str.charAt(i);
+		         }
+		         if(str.compareTo(reverse) == 0)
+		            System.out.println("wins");
+		          else 
+		            System.out.println("loses");
+		    }
+		}
+	}
+}
